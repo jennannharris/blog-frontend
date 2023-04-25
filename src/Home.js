@@ -59,7 +59,7 @@ const Home = () => {
         <Link to="/postEditor">Post Editor</Link>
       ) : (
         //If they aren't logged in, show them link to do so.
-        <Link to="/login" style={{fontWeight: "bold", color: "slategrey",}}>Login</Link>
+        <Link to="/login" style={{fontWeight: "bold", fontSize: "50px", color: "slategrey"}}>Login</Link>
       )}
     </div>
   );

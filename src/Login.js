@@ -34,17 +34,18 @@ const Login = () => {
 		<div>
 			<h1>Login</h1>
 			<form onSubmit={loginFormSubmitted}>
-				<label className="form-label">Email:</label>
+				<label className="form-label" style={{fontWeight: "bold", marginBottom: "auto", marginTop: "30px", fontSize: "30px", color: "slategrey"}}>Email:</label>
 				<input
-					type="email"
-					className="form-control"
+					
+					className="form-control" 
 					onChange={(evt) => {
 						// A1: Updates typed in value in state
 						setEmail(evt.target.value);
 					}}
 					value={email}
+					
 				/>
-				<label className="form-label">Password</label>
+				<label className="form-label" style={{fontWeight: "bold", fontSize: "30px", marginTop: "30px", color: "slategrey"}}>Password</label>
 				<input
 					type="password"
 					className="form-control"
